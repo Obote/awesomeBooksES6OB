@@ -1,6 +1,7 @@
 // Import modules
 import Book from './modules/book.js';
 import getBooks from './modules/store.js';
+import { DateTime } from './modules/luxon.js';
 
 const addBook = (book) => {
   const books = getBooks();
@@ -96,13 +97,8 @@ document.querySelector('.booksList').addEventListener('click', (e) => {
   removeBook(id.textContent);
 });
 
-function date() {
-  const dt = new Date();
-  document.getElementById('date-time').innerHTML = dt.toLocaleString('en-US');
-}
-
-date();
-setInterval(date, 1000);
+// Display date using Luxon
+document.getElementById('date-time').innerHTML = DateTime.now().toFormat('DDD t');
 
 const list = document.getElementById('list');
 const book1 = document.getElementById('book');
