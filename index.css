@@ -1,0 +1,264 @@
+/* box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  /* min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; */
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
+    scroll-behavior: auto;
+  }
+}
+
+main {
+  justify-content: center;
+  align-items: center;
+}
+
+.mainCard {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.card {
+  flex: 1;
+  max-width: 700px;
+  padding: 1rem;
+}
+
+.table {
+  width: 100%;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  margin-inline: 1rem;
+  margin-block: 1rem;
+  border: 2px solid gray;
+  text-align: left;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.primaryHeader {
+  font-size: calc(2rem + 0.5vw);
+}
+
+.secondaryHeader {
+  font-size: calc(1.5rem + 0.5vw);
+}
+
+.border {
+  border: 2px solid gray;
+}
+
+/* General styling */
+
+.form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.inputForm {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  margin-inline: auto;
+  padding: 0.25rem 2rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+.book-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.book-caption {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.by {
+  margin: 0 0.7rem 0 0.7rem;
+}
+
+.author {
+  margin: 0 0.7rem 0 0.7rem;
+}
+
+.id {
+  margin: 0 0.7rem 0 0.7rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav {
+  width: 98%;
+  border: solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: rgb(96, 59, 231);
+}
+
+.lists {
+  border-right: solid black 2px;
+  margin-right: 10px;
+  padding: 3px;
+  padding-right: 10px;
+}
+
+.lists-c {
+  margin-right: 10px;
+  padding: 3px;
+}
+
+footer {
+  position: absolute;
+  border: solid;
+  width: 95%;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  bottom: 20px;
+}
+
+.footer-p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.dataForm {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.contentList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
