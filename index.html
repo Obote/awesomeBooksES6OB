@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Books</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div>
+        <p class="logo">Awesome Books</p>
+      </div>
+      <div>
+        <ul class="nav-list">
+          <li class="lists">
+            <a class="link" id="list" href="#table">Book list</a>
+          </li>
+          <li class="lists">
+            <a class="link" id="book" href="#dataForm">Add New</a>
+          </li>
+          <li class="lists-c">
+            <a class="link" id="contact" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="current-time">
+      <span id='date-time'></span>
+    </div>
+  </header>
+
+  <main>
+    <div class="mainCard">
+      <div class="contentList">
+        <section class="card" aria-labelledby="projectName">
+          <div class="Listbook">
+            <h1 id="projectName" class="textCenter primaryHeader">All Awesome Books</h1>
+            <table class="table" id="table">
+              <thead>
+                <tr>
+                </tr>
+              </thead>
+              <tbody class="booksList" id="booksList">
+                <!-- Books list will be appended here -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section>
+          <div class="dataForm" id="dataForm">
+            <h2 class="textCenter secondaryHeader">Add a new book</h2>
+            <form id="book-form">
+              <p class="add-book">Add a new book</p>
+              <input class="insertion" type="text" required minlength="3" id="bookTitle" placeholder="Title">
+              <input class="insertion-point" type="text" required minlength="3" id="bookAuthor" placeholder="Author">
+              <div class="sub-btn">
+                <button class="submit-btn">Add</button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="contact" id="contact">
+          <h2 class="title">Contact Information</h2>
+          <p class="para">
+            Do you have any questions or just want to say "Hello"? <br />
+            You can reach out to us!
+          </p>
+          <ul>
+            <li>Our Email: mail@mail.com</li>
+            <li>Our phone number: 5555555555</li>
+            <li>Our Address: Streetname, City, Country</li>
+          </ul>
+        </section>
+      </div>
+      <footer class="footer">
+        <p class="footer-p">Copyright</p>
+        <p class="footer-links"></p>
+      </footer>
+  </main>
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>
